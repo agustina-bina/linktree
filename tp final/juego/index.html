@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pichis Rescue – Juego de Adopción</title>
+    <meta name="description" content="Juego interactivo de adopción de mascotas">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Added main site CSS for header/footer -->
+    <link rel="stylesheet" href="../estipag.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>">
+</head>
+<body>
+    <!-- Added header from main site -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">🐾</span>
+                    <span class="logo-text">Pichis Rescue</span>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Abrir menú de navegación">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="nav" role="navigation">
+                    <a href="../index.html" class="nav-link">Inicio</a>
+                    <a href="../nosotros.html" class="nav-link">Nosotros</a>
+                    <a href="../mascotas.html" class="nav-link">Mascotas</a>
+                    <a href="../involucrate.html" class="nav-link">Involúcrate</a>
+                    <a href="../contacto.html" class="nav-link">Contacto</a>
+                    <a href="index.html" class="nav-link active">Juego</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Removed navbar and page-wrapper, simplified structure -->
+    <!-- Game container -->
+    <div id="gameContainer" class="game-container">
+        <!-- Background -->
+        <img id="backgroundImage" class="background-image" alt="Tienda de mascotas" />
+
+        <!-- Main Game Screen -->
+        <div id="mainScreen" class="screen active">
+            <!-- Customer at door -->
+            <picture id="customerPicture" class="customer-picture">
+                <img id="customerImage" class="customer-image" alt="Cliente" />
+            </picture>
+            
+            <!-- Speech bubble with order -->
+            <div class="speech-bubble">
+                <p class="bubble-greeting">Quiero un:</p>
+                <p class="bubble-order"><strong id="bubbleType"></strong> <strong id="bubbleSize"></strong></p>
+            </div>
+
+            <!-- Computer on desk (clickable) -->
+            <div class="desk-section">
+                <div class="computer" id="computerButton">
+                    <div class="screen-frame">
+                        <div class="screen-display">💻</div>
+                    </div>
+                    <p class="computer-label">BUSCAR</p>
+                </div>
+            </div>
+
+            <!-- Score -->
+            <div class="score-board">
+                <p>Clientes atendidos: <span id="score">0</span>/6</p>
+            </div>
+        </div>
+
+        <!-- Computer Modal -->
+        <div id="computerModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Sistema de Búsqueda de Animales</h2>
+                    <button id="closeComputerBtn" class="close-btn">✕</button>
+                </div>
+
+                <!-- Filters -->
+                <div class="filters">
+                    <label>Filtrar por tipo:</label>
+                    <div class="filter-buttons">
+                        <button class="filter-btn active" data-filter="all">Todos</button>
+                        <button class="filter-btn" data-filter="gato">Gatos</button>
+                        <button class="filter-btn" data-filter="perro">Perros</button>
+                    </div>
+                </div>
+
+                <!-- Animals Grid -->
+                <div class="animals-grid" id="animalsGrid"></div>
+            </div>
+        </div>
+
+        <!-- Validation Modal -->
+        <div id="validationModal" class="modal">
+            <div class="modal-content validation-content">
+                <div id="validationMessage"></div>
+                <div class="adoption-paper" id="adoptionPaper"></div>
+                <button id="searchAnimalBtn" class="button primary-btn">Ir a buscar al animal</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Added footer from main site -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3 class="footer-title">Pichis Rescue</h3>
+                    <p>Un hogar para cada pichi</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook" class="social-link"><img src="../fotos/fc.jpg" alt="Facebook" class="social-icon"></a>
+                        <a href="#" aria-label="Instagram" class="social-link"><img src="../fotos/ig.jpg" alt="Instagram" class="social-icon"></a>
+                        <a href="#" aria-label="Twitter" class="social-link"><img src="../fotos/wt.jpg" alt="Twitter" class="social-icon"></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Contacto</h4>
+                    <p>📧 info@pichisrescue.org</p>
+                    <p>📞 +54 11 1234-5678</p>
+                    <p>📍 Av. Libertador 1234, CABA</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Navegación</h4>
+                    <ul class="footer-links">
+                        <li><a href="../index.html">Inicio</a></li>
+                        <li><a href="../nosotros.html">Nosotros</a></li>
+                        <li><a href="../mascotas.html">Mascotas</a></li>
+                        <li><a href="../involucrate.html">Involúcrate</a></li>
+                        <li><a href="../contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pichis Rescue. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Added main site JS for mobile menu -->
+    <script src="../app.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Involúcrate - Pichis Rescue</title>
+    <meta name="description" content="Conocé las diferentes formas de ayudar a Pichis Rescue: donaciones, voluntariado y apadrinamiento.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estipag.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-icon">🐾</span>
+                    <span class="logo-text">Pichis Rescue</span>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Abrir menú de navegación">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Inicio</a>
+                    <a href="nosotros.html" class="nav-link">Nosotros</a>
+                    <a href="mascotas.html" class="nav-link">Mascotas</a>
+                    <a href="involucrate.html" class="nav-link active">Involúcrate</a>
+                    <a href="contacto.html" class="nav-link">Contacto</a>
+                    <a href="juego/index.html" class="nav-link">Juego</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <a href="#denuncia" class="denuncia-btn" aria-label="Reportar maltrato animal">
+        <span class="denuncia-icon">⚠️</span>
+        <span class="denuncia-text">Denunciar</span>
+    </a>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>¿Cómo Ayudar?</h1>
+            <p>Hay muchas formas de sumarte a nuestra causa</p>
+        </div>
+    </section>
+
+    <!-- Donaciones -->
+    <section id="donaciones" class="section">
+        <div class="container">
+            <div class="content-split">
+                <div class="content-text">
+                    <h2 class="section-title">💰 Donaciones</h2>
+                    <p>Tu aporte económico nos permite:</p>
+                    <ul class="styled-list">
+                        <li>✓ Comprar alimento para perros y gatos</li>
+                        <li>✓ Pagar tratamientos veterinarios</li>
+                        <li>✓ Mantener las instalaciones del refugio</li>
+                        <li>✓ Esterilizar y vacunar a los rescatados</li>
+                        <li>✓ Comprar medicamentos y suministros</li>
+                    </ul>
+                    <p><strong>Cada peso cuenta y transforma vidas.</strong></p>
+                    <div class="donation-info">
+                        <p><strong>Alias:</strong> pichis.rescue</p>
+                        <p><strong>CBU:</strong> 0000123456789012345678</p>
+                        <p><strong>Titular:</strong> Asociación Pichis Rescue</p>
+                    </div>
+                </div>
+                <div class="content-image">
+                    <div class="calculator-card">
+                        <h3>🧮 Calculadora de Impacto</h3>
+                        <p class="calculator-description">Descubrí cómo tu donación ayuda a los pichis</p>
+                        
+                        <div class="calculator-input-group">
+                            <div class="input-with-prefix">
+                                <span class="input-prefix">$</span>
+                                <input type="number" id="donationAmount" class="form-input" placeholder="Ingresá monto" min="100" step="100">
+                            </div>
+                            <button id="calculateDonation" class="btn btn-primary">Calcular</button>
+                        </div>
+
+                        <div id="donationResult" class="donation-result" style="display: none;">
+                            <div class="donation-bubbles">
+                                <div class="donation-bubble" data-category="alimentos">
+                                    <div class="bubble-title">Alimentos</div>
+                                    <div class="bubble-content">
+                                        <span class="bubble-label">Alimentos:</span>
+                                        <span class="bubble-value">0</span>
+                                    </div>
+                                </div>
+                                <div class="donation-bubble" data-category="ropa">
+                                    <div class="bubble-title">Ropa / Juguetes / Camas</div>
+                                    <div class="bubble-content">
+                                        <span class="bubble-label">Ropa / Juguetes / Camas:</span>
+                                        <span class="bubble-value">0</span>
+                                    </div>
+                                </div>
+                                <div class="donation-bubble" data-category="veterinario">
+                                    <div class="bubble-title">Veterinario</div>
+                                    <div class="bubble-content">
+                                        <span class="bubble-label">Veterinario:</span>
+                                        <span class="bubble-value">0</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Voluntariado -->
+    <section id="voluntariado" class="section section-light">
+        <div class="container">
+            <h2 class="section-title text-center">🤝 Voluntariado</h2>
+            <p class="section-subtitle text-center">Necesitamos ayuda en diferentes áreas</p>
+            
+            <div class="cards-grid">
+                <div class="card">
+                    <div class="card-icon">🐕</div>
+                    <h3 class="card-title">Paseadores</h3>
+                    <p>Ayudá a ejercitar a los perritos y darles momentos de alegría fuera del refugio.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🧹</div>
+                    <h3 class="card-title">Limpieza y Mantenimiento</h3>
+                    <p>Mantener el refugio limpio y ordenado es fundamental para la salud de todos.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">📸</div>
+                    <h3 class="card-title">Difusión y Redes</h3>
+                    <p>Ayudanos a contar historias y promover adopciones en redes sociales.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">🚗</div>
+                    <h3 class="card-title">Transporte</h3>
+                    <p>Colaborá llevando animales al veterinario o a sus hogares de tránsito.</p>
+                </div>
+            </div>
+
+            <div class="text-center" style="margin-top: 2rem;">
+                <a href="contacto.html" class="btn btn-primary">Quiero ser Voluntario</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Apadrinamiento -->
+    <section id="apadrinamiento" class="section">
+        <div class="container">
+            <div class="content-box">
+                <h2 class="section-title text-center">❤️ Programa "Padrinos Pichis"</h2>
+                <p class="lead text-center">Convertite en padrino o madrina de un pichi específico</p>
+                
+                <div class="apadrinamiento-info">
+                    <h3>¿Cómo funciona?</h3>
+                    <ol class="styled-list">
+                        <li>Elegís un perro o gato del refugio para apadrinar</li>
+                        <li>Te comprometés con un aporte mensual fijo (desde $2000)</li>
+                        <li>Recibís actualizaciones periódicas sobre tu ahijado</li>
+                        <li>Podés visitarlo cuando quieras</li>
+                        <li>Tu aporte cubre sus necesidades hasta que sea adoptado</li>
+                    </ol>
+
+                    <div class="highlight-box">
+                        <p><strong>🎁 Beneficios:</strong> Fotos mensuales, visitas prioritarias, certificado de padrino y agradecimiento en nuestras redes.</p>
+                    </div>
+
+                    <div class="text-center" style="margin-top: 2rem;">
+                        <a href="mascotas.html" class="btn btn-primary">Ver Pichis Disponibles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3 class="footer-title">Pichis Rescue</h3>
+                    <p>Un hogar para cada pichi</p>
+                   <div class="social-links">
+                        <a href="#" aria-label="Facebook" class="social-link"><img src="fotos/fc.jpg" alt="Facebook" class="social-icon"></a>
+                        <a href="#" aria-label="Instagram" class="social-link"><img src="fotos/ig.jpg" alt="Instagram" class="social-icon"></a>
+                        <a href="#" aria-label="Twitter" class="social-link"><img src="fotos/wt.jpg" alt="Twitter" class="social-icon"></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Contacto</h4>
+                    <p>📧 info@pichisrescue.org</p>
+                    <p>📞 +54 11 1234-5678</p>
+                    <p>📍 Av. Libertador 1234, CABA</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Navegación</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="mascotas.html">Mascotas</a></li>
+                        <li><a href="involucrate.html">Involúcrate</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="juego/index.html">Juego</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Pichis Rescue. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="denunciaModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Reportar Maltrato Animal</h2>
+            <p>Si presenciaste maltrato o abandono animal, por favor completá este formulario.</p>
+            <form id="denunciaForm" class="form">
+                <div class="form-group">
+                    <label for="denunciaUbicacion">Ubicación del incidente *</label>
+                    <input type="text" id="denunciaUbicacion" required placeholder="Dirección o zona">
+                </div>
+                <div class="form-group">
+                    <label for="denunciaDescripcion">Descripción *</label>
+                    <textarea id="denunciaDescripcion" rows="5" required placeholder="Describe lo que observaste..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="denunciaContacto">Tu email (opcional)</label>
+                    <input type="email" id="denunciaContacto" placeholder="tuemail@example.com">
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar Denuncia</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="app.js"></script>
+</body>
+</html>
