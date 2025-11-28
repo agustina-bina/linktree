@@ -17,7 +17,7 @@ const animals = [
 
 const customers = [
   { id: 1, name: "Cliente 1", type: "gato", size: "chico", imageUrl: "../fotos/cliente 1.png" },
-  { id: 2, name: "Cliente 2", type: "perro", size: "mediano", imageUrl: "../fotos/cliente.png" },
+  { id: 2, name: "Cliente 2", type: "perro", size: "mediano", imageUrl: "../fotos/cliente .png" },
   { id: 3, name: "Cliente 3", type: "gato", size: "mediano", imageUrl: "../fotos/cliente 3.png" },
   { id: 4, name: "Cliente 4", type: "perro", size: "chico", imageUrl: "../fotos/cliente 4.png" },
   { id: 5, name: "Cliente 5", type: "perro", size: "grande", imageUrl: "../fotos/cliente 5.png" },
@@ -275,4 +275,5 @@ nextClientBtn.addEventListener("click", () => {
 
 console.log("[v0] Initializing game...")
 initGame()
+
 
