@@ -72,7 +72,7 @@ const mascotas = [
     descripcion:
       "Simba es un cachorro curioso, activo y muy divertido. Le encanta explorar y jugar con todo lo que encuentra.",
     caracteristicas: ["Curioso", "Activo", "Juguetón"],
-    imagen: "fotos/Simba.jpg",
+    imagen: "fotos/simba.jpg",
   },
   {
     id: 6,
@@ -740,3 +740,4 @@ window.showPetDetails = (petId) => {
 }
 
 window.checkAdoptionMatch = checkAdoptionMatch
+
