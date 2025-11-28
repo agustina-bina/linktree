@@ -1,9 +1,0 @@
-bootstrap 
-
-
-
-tp final:
-desdarrollo de pag para una ong
-entregar el doc para rellenar
-para aprobar desarrolar una app en javascript que tenga que ver con la tematica qie elegimos, ej una calculadora de donaciones con opciones fijas y cálculos, un videojuego didáctico que enseñe algo spbre la ong (ej si elijo perritos que los muestre y se vayan presentando),
-si no promocionas el último tp tenes que rendir en febrero
